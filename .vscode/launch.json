@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name":"Launch groovy",
+            "request": "launch",
+            "type": "coreclr",
+            "preLaunchTask": "groovy",
+            "program": "cmd.exe",
+            "args": ["/c"],
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "internalConsoleOptions": "neverOpen"
+        }
+    ]
+
+,
+"tasks": [
+    {
+        "label": "groovy",
+        "type": "shell",
+        "command": "groovy ${file}"
+    }
+]
+}
